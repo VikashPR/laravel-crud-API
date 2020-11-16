@@ -26,9 +26,7 @@ Route::get('articles', 'ArticleController@index');
 
 // List Single Article 
 
-// Route::post('article/{id}', 'ArticleController@show');
-
-Route::post('article/{id}','ArticleController@show');
+Route::get('article/{id}','ArticleController@show');
 
 // Create new Article
 
