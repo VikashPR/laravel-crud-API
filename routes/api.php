@@ -30,8 +30,12 @@ Route::get('article/{id}','ArticleController@show');
 
 // Create new Article
 
+Route::post('article', 'ArticleController@store');
+
+// Update Article
+
 Route::put('article', 'ArticleController@store');
 
 // Delete Article
 
-Route::delete('article', 'ArticleController@destroy');
+Route::delete('article/{id}', 'ArticleController@destroy');

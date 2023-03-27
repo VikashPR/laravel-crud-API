@@ -22,4 +22,12 @@ class Article extends JsonResource
             // 'created_at' => $this->created_at
         ];
     }
+
+    public function with($request)
+    {
+        return[
+            "version" => '2.0',
+            'author_url' => url('httpd://webilicious.in')
+        ];
+    }
 }
